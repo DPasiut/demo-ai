@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          azure:
+              client-id: 8e77d5bc-e3bd-4af9-b6e6-5d7920e21a39
+              client-secret: n148Q~bH7Ml_GsoZADdS14Y3D7ynWGz8oyIribZC
+        provider:
+          azure:
+            issuer-uri: https://login.microsoftonline.com/8684f4a8-bdc6-454e-b837-338a0f55c8f3/v2.0
+            authorization-uri: https://login.microsoftonline.com/8684f4a8-bdc6-454e-b837-338a0f55c8f3/oauth2/v2.0/authorize
+            token-uri: https://login.microsoftonline.com/8684f4a8-bdc6-454e-b837-338a0f55c8f3/oauth2/v2.0/token
+            jwk-set-uri: https://login.microsoftonline.com/common/discovery/v2.0/keys
+env:
+  SPRING_PROFILES_ACTIVE: azure-enabled
